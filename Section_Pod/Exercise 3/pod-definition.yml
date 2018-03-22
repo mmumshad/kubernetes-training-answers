@@ -1,0 +1,19 @@
+# Introduction:
+
+# Instruction: Update value of kind to Pod.
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: v1
+#kind:
+#metadata:
+#spec:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Pod
+metadata:
+spec:

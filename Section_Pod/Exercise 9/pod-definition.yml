@@ -1,0 +1,43 @@
+# Introduction: Postgres Docker image requires an environment variable to be set for password.
+# https://hub.docker.com/_/postgres/
+
+# Instruction: Set an environment variable for the docker container. POSTGRES_PASSWORD with a value mysecretpassword. ]
+# I know we haven't discussed this in the lecture, but it is easy. To pass in an environment variable add a new property 'env' to the container object. It is a sibling of image and name.
+# env is an array/list. So add a new item under it. The item will have properties name and value. name should be the name of the environment variable - POSTGRES_PASSWORD
+# And value should be the password - mysecretpassword
+#
+#
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: postgres
+#  labels:
+#    tier: db-tier
+#spec:
+#  containers:
+#    - name: postgres
+#      image: postgres
+
+#
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgres
+  labels:
+    tier: db-tier
+spec:
+  containers:
+    - name: postgres
+      image: postgres
+      env:
+        - name: POSTGRES_PASSWORD
+          value: mysecretpassword
+

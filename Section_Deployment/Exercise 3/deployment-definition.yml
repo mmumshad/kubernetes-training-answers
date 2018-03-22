@@ -1,0 +1,23 @@
+# Introduction: Let us now add values for metadata
+
+# Instruction: Name the Deployment frontend. And add labels app=>mywebsite and tier=> frontend
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#spec:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: mywebsite
+    tier: frontend
+spec:

@@ -1,0 +1,31 @@
+# Instruction: Let us update the number of replicas to 4.
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#  name: frontend
+#  labels:
+#    app: mywebsite
+#    tier: frontend
+#spec:
+#  replicas: 4
+#  template:
+#  selector:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    app: mywebsite
+    tier: frontend
+spec:
+  replicas: 4
+  template:
+  selector:

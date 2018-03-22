@@ -1,0 +1,30 @@
+# Introduction:
+
+# Instruction: Containers is an array/list. So create the first element in the array/list and add the following properties to it: name - nginx and image - nginx
+#
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: v1
+#kind: Pod
+#metadata:
+#  name: myapp-pod
+#  labels:
+#    app: myapp
+#spec:
+#  containers:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    app: myapp
+spec:
+  containers:
+    - name: nginx
+      image: nginx

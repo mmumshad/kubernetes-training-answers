@@ -1,0 +1,43 @@
+# Introduction: Let us now link the pods to the Deployment by updating selectors.
+# Instruction: Add a property "matchLabels" under selector and copy the labels defined in the pod-definition under it.
+# Note: this may not work in play-with-k8s as it runs on 1.8 version of kubernetes
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#  name: frontend
+#  labels:
+#    app: mywebsite
+#    tier: frontend
+#spec:
+#  replicas: 4
+#  template:
+#  selector:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-processing-deployment
+  labels:
+    app: mywebsite
+    tier: backend
+spec:
+  replicas: 4
+  template:
+    metadata:
+      name: image-processing-pod
+      labels:
+        tier: backend
+    spec:
+      containers:
+        - name: mycustom-image-processing
+          image: someorg/mycustom-image-processing
+  selector:
+    matchLabels:
+      tier: backend

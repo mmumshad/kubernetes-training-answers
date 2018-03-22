@@ -1,0 +1,36 @@
+# Introduction: Let us now add values for type. Since we are creating a frontend service for enabling external access to users, we will set it to NodePort.
+
+# Instruction: Set value for type to NodePort.
+
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  name: frontend
+#  labels:
+#    app: myapp
+#spec:
+#  type:
+#  ports:
+#    - port: 80
+#      targetPort: 80
+#  selector:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  labels:
+    app: myapp
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:

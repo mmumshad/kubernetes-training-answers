@@ -1,0 +1,37 @@
+# Introduction: Let us now add values for selector. We need to link the Service to the PODs created by the deployment.
+
+# Instruction: Given the deployment-definition file we created in the previous Section. Copy the appropriate labels and paste it under selector section of service-definition.yml file.
+
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  name: frontend
+#  labels:
+#    app: myapp
+#spec:
+#  type: NodePort
+#  ports:
+#    - port: 80
+#      targetPort: 80
+#  selector:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  labels:
+    app: myapp
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:
+    app: myapp

@@ -1,0 +1,23 @@
+# Introduction: Let us now add values for metadata
+
+# Instruction: Name the ReplicaSet frontend. And add labels app=>mywebsite and tier=> frontend
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: apps/v1
+#kind: ReplicaSet
+#metadata:
+#spec:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: frontend
+  labels:
+    app: mywebsite
+    tier: frontend
+spec:

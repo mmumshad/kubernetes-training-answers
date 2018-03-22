@@ -1,0 +1,19 @@
+# Introduction: Let us now populate values for each property. Start with apiVersion.
+
+# Instruction: Update value of apiVersion to v1. Remember to add a space between colon (:) and the value (v1)
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion:
+#kind:
+#metadata:
+#spec:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind:
+metadata:
+spec:

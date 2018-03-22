@@ -1,0 +1,15 @@
+# Introduction: Let us start with Deployments! Given a deployment-definition.yml file. We are only getting started with it, so let's get it populated.
+
+# Instruction: Add all the root level properties to it. Note: Only add the properties, not any values.
+# ------------------------------
+#           BEFORE
+# ------------------------------
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion:
+kind:
+metadata:
+spec:

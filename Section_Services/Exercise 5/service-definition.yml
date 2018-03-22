@@ -1,0 +1,34 @@
+# Introduction: Let us now add values for ports. Ports is an Array/ List. Each item in the list has a set of properties - port and targetPort
+
+# Instruction: Create an Array/List item under ports. Add a dictionary with properties port and targetPort. Set values for both to port 80.
+# Note: We will not be providing a NodePort as we would like Kubernetes to assign one automatically for us.
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  name: frontend
+#  labels:
+#    app: myapp
+#spec:
+#  type:
+#  ports:
+#  selector:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  labels:
+    app: myapp
+spec:
+  type:
+  ports:
+    - port: 80
+      targetPort: 80
+  selector:

@@ -1,0 +1,20 @@
+# Introduction: Let us now get to the metadata section.
+
+# Instruction: Add a property "name" under metadata with value "myapp-pod". Remember to add a space before 'name' to make it a child of metadata.
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: v1
+#kind:
+#metadata:
+#spec:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+spec:

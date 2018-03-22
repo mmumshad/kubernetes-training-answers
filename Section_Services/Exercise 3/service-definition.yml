@@ -1,0 +1,22 @@
+# Introduction: Let us now add values for metadata.
+
+# Instruction: Add a name for the service frontend and a label app=>myapp
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: v1
+#kind: Service
+#metadata:
+#spec:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  labels:
+    app: myapp
+spec:

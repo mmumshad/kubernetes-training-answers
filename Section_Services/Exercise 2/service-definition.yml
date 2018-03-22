@@ -1,0 +1,19 @@
+# Introduction: Let us now add values for Service. Service is under apiVersion v1
+
+# Instruction: Update values for apiVersion and kind
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion:
+#kind:
+#metadata:
+#spec:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Service
+metadata:
+spec:

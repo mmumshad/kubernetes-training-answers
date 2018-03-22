@@ -1,0 +1,32 @@
+# Introduction: Let us now try to create a service-definition.yml file from scratch. This time all in one go.
+# You are tasked to create a service to enable the frontend pods to access a backend set of Pods.
+
+# Instruction: Use the information provided in the below table to create a backend service definition file. Refer to the provided deployment-definition file for information regarding the PODs.
+# Service Name: image-processing
+# labels: app=> myapp
+# type: ClusterIP
+# Port on the service: 80
+# Port exposed by image processing container: 8080
+#
+
+# ------------------------------
+#           BEFORE
+# ------------------------------
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: image-processing
+  labels:
+    app: myapp
+spec:
+  # type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: 8080
+  selector:
+    tier: backend

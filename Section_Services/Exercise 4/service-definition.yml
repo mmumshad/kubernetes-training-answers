@@ -1,0 +1,28 @@
+# Introduction: Let us now add values for spec section. The spec section for Services have type, selector and ports.
+
+# Instruction: Add properties under spec section - type, selector and ports. Do not add any values for them.
+# ------------------------------
+#           BEFORE
+# ------------------------------
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  name: frontend
+#  labels:
+#    app: myapp
+#spec:
+
+# ------------------------------
+#           AFTER
+# ------------------------------
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  labels:
+    app: myapp
+spec:
+  type:
+  ports:
+  selector:
