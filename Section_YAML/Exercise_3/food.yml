@@ -1,0 +1,36 @@
+# We have updated the food.yml file with nutrition information for Fruits.
+# Similarly update the nutrition information for Vegetables. Use the below table for information
+#            Vegetable | Calories | Fat   | Carbs
+#           -------------------------------------
+#            Carrot    |   25     | 0.1 g |  6 g
+#            Tomato    |   22     | 0.2 g |  4.8 g
+#            Cucumber  |   8      | 0.1 g |  1.9 g
+
+
+Fruits:
+  - Apple:
+        Calories: 95
+        Fat: 0.3 g
+        Carbs: 25 g
+  - Banana:
+      Calories: 105
+      Fat: 0.4 g
+      Carbs: 27 g
+  - Orange:
+        Calories: 45
+        Fat: 0.1 g
+        Carbs: 11 g
+
+Vegetables:
+  - Carrot:
+        Calories: 25
+        Fat: 0.1 g
+        Carbs: 6 g
+  - Tomato:
+      Calories: 22
+      Fat: 0.2 g
+      Carbs: 4.8 g
+  - Cucumber:
+        Calories: 8
+        Fat: 0.1 g
+        Carbs: 1.9 g

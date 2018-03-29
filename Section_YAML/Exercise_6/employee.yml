@@ -1,0 +1,35 @@
+# Update the YAML file to include Jacob's pay slips. Add a new property "Payslips" and create a list of pay slip details. Each payslip detail contains Month and Wage.
+#   June = 4000
+#   July = 4500
+#   August = 4000
+#Employee:
+#  Name: Jacob
+#  Sex: Male
+#  Age: 30
+#  Title: Systems Engineer
+#  Projects:
+#    - Automation
+#    - Support
+#  Payslips:
+#    - Month: June
+#      Wage: 4000
+#    - Month: July
+#      Wage: 4500
+#    - Month: August
+#      Wage: 4000
+
+Employee:
+  Name: Jacob
+  Sex: Male
+  Age: 30
+  Title: Systems Engineer
+  Projects:
+    - Automation
+    - Support
+  Payslips:
+    - Month: June
+      Wage: 4000
+    - Month: July
+      Wage: 4500
+    - Month: August
+      Wage: 4000
