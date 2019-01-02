@@ -2,35 +2,35 @@
 # Similarly update the nutrition information for Vegetables. Use the below table for information
 #            Vegetable | Calories | Fat   | Carbs
 #           -------------------------------------
-#            Carrot    |   25     | 0.1 g |  6 g
-#            Tomato    |   22     | 0.2 g |  4.8 g
-#            Cucumber  |   8      | 0.1 g |  1.9 g
+#            Carrot    |   25     | 0.1 |  6
+#            Tomato    |   22     | 0.2 |  4.8
+#            Cucumber  |   8      | 0.1 |  1.9
 
 
 Fruits:
   - Apple:
         Calories: 95
-        Fat: 0.3 g
-        Carbs: 25 g
+        Fat: 0.3
+        Carbs: 25
   - Banana:
       Calories: 105
-      Fat: 0.4 g
-      Carbs: 27 g
+      Fat: 0.4
+      Carbs: 27
   - Orange:
         Calories: 45
-        Fat: 0.1 g
-        Carbs: 11 g
+        Fat: 0.1
+        Carbs: 11
 
 Vegetables:
   - Carrot:
         Calories: 25
-        Fat: 0.1 g
-        Carbs: 6 g
+        Fat: 0.1
+        Carbs: 6
   - Tomato:
       Calories: 22
-      Fat: 0.2 g
-      Carbs: 4.8 g
+      Fat: 0.2
+      Carbs: 4.8
   - Cucumber:
         Calories: 8
-        Fat: 0.1 g
-        Carbs: 1.9 g
+        Fat: 0.1
+        Carbs: 1.9
