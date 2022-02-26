@@ -22,7 +22,7 @@ metadata:
   name: postgres
   labels:
     tier: db-tier
-spec:
+specs:
   containers:
     - name: postgres
       image: postgres
